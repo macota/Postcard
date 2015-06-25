@@ -92,7 +92,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="270" width="368" height="30"/>
+                                    <rect key="frame" x="16" y="270" width="368" height="29"/>
                                 </variation>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKD-ou-cr6">
@@ -104,6 +104,15 @@
                                     <rect key="frame" x="16" y="84" width="368" height="66"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXI-6B-Bda">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="146" width="258" height="38"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +122,7 @@
                                 <exclude reference="l9q-PL-pIP"/>
                                 <exclude reference="jar-iF-q7J"/>
                                 <exclude reference="LKD-ou-cr6"/>
+                                <exclude reference="cXI-6B-Bda"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,12 +132,14 @@
                                 <include reference="l9q-PL-pIP"/>
                                 <include reference="jar-iF-q7J"/>
                                 <include reference="LKD-ou-cr6"/>
+                                <include reference="cXI-6B-Bda"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="cLabel" destination="cXI-6B-Bda" id="wBT-CY-Z6o"/>
+                        <outlet property="enterNameText" destination="jar-iF-q7J" id="eUn-c5-hCj"/>
                         <outlet property="entermessagetextfield" destination="q0C-cl-LOa" id="x99-s5-qfX"/>
-                        <outlet property="enternametextfield" destination="q0C-cl-LOa" id="wuG-vf-RHA"/>
                         <outlet property="mailButton" destination="l9q-PL-pIP" id="WwA-26-3Kw"/>
                         <outlet property="messagelabel" destination="LKD-ou-cr6" id="lGb-ov-qdn"/>
                     </connections>
